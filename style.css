@@ -1,0 +1,144 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f5f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    z-index: -1000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 35px;
+    color: #102a42;
+    letter-spacing: 5px;
+    margin: 30px 0px;
+}
+
+.all {
+    max-width: 700px;
+    height: auto;
+    min-height: 63.5vh;
+    margin: 45px 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    z-index: -15;
+}
+
+#images-el {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    margin: 15px 0px 25px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#images-el::before {
+    content: '';
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #49a6e9;
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    left: 8px;
+}
+
+#images-el::after {
+    content: '"';
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #49a6e9;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 0px;
+}
+
+h3 {
+    letter-spacing: 3px;
+    font-size: 16px;
+    padding-bottom: 10px;
+    z-index: 100;
+}
+
+h5 {
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: #49a6e9;
+    font-weight: 100;
+}
+
+p {
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 13px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 5px 25px 10px;
+}
+
+.two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#arrow-one,
+#arrow-two {
+    color: #49a6e9;
+    font-size: 25px;
+    margin: 0px 13px;
+    cursor: pointer;
+}
+
+#arrow-one:hover,
+#arrow-two:hover {
+    opacity: 0.8;
+    transform: scale(1.05, 1.05);
+}
+
+button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #49a6e91e;
+    color: #49a6e9;
+    border: 2px solid #49a6e9;
+    margin: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.80;
+    transform: scale(1.08, 1.08)
+}
